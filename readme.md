@@ -6,13 +6,17 @@ An interactive dependency graph across Composio's **Google Super** and **GitHub*
 
 ## screenshots
 
-<!-- Add screenshots here, e.g. save them to docs/ and reference them:
-![Graph overview](docs/graph-1.png)
-![Node detail](docs/graph-2.png)
-![Filtered view](docs/graph-3.png)
--->
+**Full graph** — 1305 tools across GitHub and Google Super, 2634 dependency edges.
+![Full dependency graph](docs/1.png)
 
-_Screenshots coming soon._
+**A producer's reach** — selecting `GOOGLESUPER_GET_SPREADSHEET_INFO` reveals every tool that consumes a `spreadsheet_id` it can supply.
+![Spreadsheet info node and its consumers](docs/2.png)
+
+**Per-tool inspection** — `GITHUB_GET_AN_ISSUE` with its producers (where `issue_number` comes from) and consumers in the detail panel.
+![GitHub issue node detail](docs/3.png)
+
+**Focused cluster** — `GOOGLESUPER_CREATE_GOOGLE_SHEET` and the chain of tools that build on its output.
+![Create sheet node detail](docs/4.png)
 
 ## how it works
 
