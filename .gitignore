@@ -1,0 +1,12 @@
+# secrets — never commit API keys
+.env
+.env.*
+
+# dependencies
+node_modules/
+
+# local agent session traces (used only for upload.sh submission)
+agent-sessions/
+
+# macOS
+.DS_Store
